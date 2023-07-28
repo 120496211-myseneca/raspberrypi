@@ -144,7 +144,7 @@ def sendtransactiondata(maintopic,mainproducerid,VIPERPORT,index,preprocesstopic
 #     preprocesslogic='min,max,avg,diff,outliers,variance,anomprob,varied,outliers2-5,anomprob2-5,anomprob3,gm,hm,trend,IQR,trimean,spikedetect,cv,skewness,kurtosis'
 #     preprocesslogic='anomprob,outliers,consistency,variance,max,avg,diff,diffmargin,trend,min'
 
-     preprocessconditions='variance,diffmargin,max,avg,diff'
+     preprocessconditions=''
      
       # You can access these new preprocessed topics as:
       #   arcturus-humidity_preprocessed_Max
@@ -202,7 +202,7 @@ latlong=lat:long'
      identifier = "IoT device performance and failures"
 
      # if dataage - use:dataage_utcoffset_timetype
-     preprocesslogic='anomprob,trend,avg'
+     preprocesslogic='variance,diffmargin,max,avg,diff'
      #preprocesslogic='dataage_-4_day,trend,min,max' # millisecond,second,minute,hour,day
      #preprocesslogic='dataage_-4_hour' # millisecond,second,minute,hour,day
 #     preprocesslogic='dataage_1_minute' # millisecond,second,minute,hour,day
